@@ -1,28 +1,27 @@
-# Lab 4 - Unit tests (unittest, Python, VS Code)
+# Лабораторная работа №4 — Unit-тесты в Python
 
-## Quick start
+## Быстрый старт
 ```bash
 python3 -m venv .venv
-source ./.venv/bin/activate  # macOS/Linux
+source .venv/bin/activate  # для macOS/Linux
 pip install -U pip
 python -m unittest discover -s tests -p "test_*.py" -v
 ```
 
-## Structure
+## Структура проекта
 ```
-lab4_unittest_vscode/
-├─ .vscode/
-│  ├─ settings.json
+ISRPO-UNITTESTS/
 ├─ src/
 │  ├─ rectangle.py
 ├─ tests/
 │  ├─ test_rectangle.py
 ├─ README.md
-├─ REPORT.md
-├─ .gitignore
 ```
 
-## VS Code
-1) Install the Python extension (Microsoft).
-2) Open the folder in VS Code -> Testing (beaker icon) -> Run All Tests.
-   Or: Cmd+Shift+P -> "Python: Configure Tests" -> unittest -> tests
+## Работа с VS Code
+1) Установите расширение Python от Microsoft.
+2) Откройте папку проекта в VS Code.
+3) Перейдите в раздел тестирования (значок с колбочкой) и нажмите «Запустить все тесты».
+   Или используйте команду Cmd+Shift+P, выберите «Python: Configure Tests», затем unittest и укажите папку tests.
+
+В данной лабораторной работе используется модуль `unittest` для написания и запуска тестов.
